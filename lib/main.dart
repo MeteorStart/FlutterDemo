@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/home.dart';
-import 'package:flutter_app/pages/weidget_study/ButtonStudy.dart';
-import 'package:flutter_app/pages/weidget_study/TextStudy.dart';
+import 'package:flutter_app/pages/widget_study/ButtonStudy.dart';
+import 'package:flutter_app/pages/widget_study/TextStudy.dart';
 
 void main() => runApp(MyApp());
 
