@@ -17,6 +17,7 @@ class MyApp extends StatelessWidget {
         "/": (BuildContext context) => HomePage(),
         "/text": (BuildContext context) => TextStudy(),
         "/button": (BuildContext context) => ButtonStudy(),
+        "/image": (BuildContext context) => ButtonStudy(),
       },
       initialRoute: "/",
     );
