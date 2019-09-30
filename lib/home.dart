@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 class HomePage extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
-    // TODO: implement createState
     return _HomePageState();
   }
 }
@@ -27,27 +26,34 @@ class _HomePageState extends State<HomePage> {
               onPressed: _onButtonPressed,
               child: new Text("跳转到ButtonStudy页面"),
             ),
+            new RaisedButton(
+              onPressed: _onImagePressed,
+              child: new Text("跳转到ImageStudy页面"),
+            ),
           ],
         ),
       ),
     );
   }
 
-  /**
-   * Text控件学习
-   * */
+  /// Text控件学习
   _onTextPressed() {
     setState(() {
       Navigator.of(context).pushNamed("/text");
     });
   }
 
-  /**
-   * Button控件学习
-   * */
+  /// Button控件学习
   _onButtonPressed() {
     setState(() {
       Navigator.of(context).pushNamed("/button");
+    });
+  }
+
+  /// Button控件学习
+  _onImagePressed() {
+    setState(() {
+      Navigator.of(context).pushNamed("/image");
     });
   }
 }
