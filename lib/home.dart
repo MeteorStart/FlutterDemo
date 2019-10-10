@@ -30,6 +30,14 @@ class _HomePageState extends State<HomePage> {
               onPressed: _onImagePressed,
               child: new Text("跳转到ImageStudy页面"),
             ),
+            new RaisedButton(
+              onPressed: _onNativePressed,
+              child: new Text("跳转到NativeStudy页面"),
+            ),
+            new RaisedButton(
+              onPressed: _onBluePressed,
+              child: new Text("跳转到BlueStudy页面"),
+            ),
           ],
         ),
       ),
@@ -54,6 +62,20 @@ class _HomePageState extends State<HomePage> {
   _onImagePressed() {
     setState(() {
       Navigator.of(context).pushNamed("/image");
+    });
+  }
+
+  /// Button控件学习
+  _onNativePressed() {
+    setState(() {
+      Navigator.of(context).pushNamed("/native");
+    });
+  }
+
+  /// Button控件学习
+  _onBluePressed() {
+    setState(() {
+      Navigator.of(context).pushNamed("/blue");
     });
   }
 }
